@@ -5,3 +5,10 @@
 **email:** holoborodko.oksana@gmail.com<br>
 **LinkedIn:** [holoborodko-oksana](https://www.linkedin.com/mwlite/in/holoborodko-oksana) <br>
 **GitHub:** [OksanaHoloborodko](https://github.com/OksanaHoloborodko)<br>
+### **About me**
+Working as a digital marketer in an IT company, I started to get interested in workflow automation. This led me to learn Java Script.<br>
+
+I have all the necessary skills that will allow me to become an excellent front-end developer: 
+- interest in learning a programming language; 
+- perseverance; 
+- attention to details.
