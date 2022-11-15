@@ -18,3 +18,19 @@ I have all the necessary skills that will allow me to become an excellent front-
 - JavaScript
 - GitHub
 - VS Code
+### **Code example**
+```
+function combine(...args) {
+ let newObj = {};
+  for(let item of args) {
+     for(let key in item) {
+       if(Object.keys(newObj).includes(key)) {
+         newObj[key] += item[key];
+       } else {
+         newObj[key] = item[key];
+       }
+     }
+  }
+  return newObj;
+}
+```
