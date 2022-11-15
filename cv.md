@@ -46,3 +46,7 @@ Master in Economics, Organization and Enterprise Management
 - [HTML (Sololearn)](https://www.sololearn.com/certificates/course/en/25035218/1014/landscape/png)
 - [JavaScript (Sololearn)](https://www.sololearn.com/certificates/course/en/25035218/1024/landscape/png)
 - [JavaScript Basic (Stepik)](https://stepik.org/cert/1448766?etk=WzI0MSw0MDQ2MzQxOF0.1nZd1D.z8bYJ-1YHMpdxG1UwCUAZilkTlY)
+### **Language level**
+***
+**English**: B1 (Intermediate)<br>
+**Ukrainian**: Native
