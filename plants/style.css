@@ -63,7 +63,7 @@ header {
 /*header end*/
 
 /*welcome start*/
-.welcome{
+.welcome {
     background-color: #EDF2EC;
     height: 532px;
     padding: 62px 109px;
@@ -73,7 +73,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 1220px;
+    max-width: 1222px;
 }
 
 .welcome-img {
@@ -93,7 +93,7 @@ header {
     font-size: 45px;
     line-height: 50px;
     color: #717171;
-    padding-bottom: 42px;
+    padding-bottom: 45px;
 }
 
 .welcome-plants {
@@ -128,4 +128,52 @@ header {
     background: #E06733;
     color: #FFFFFF;
     transition: 0.8s;
+}
+/*welcome end*/
+
+/*about start*/
+.about {
+    background-color: #FFFFFF;
+    height: 666px;
+    padding: 93px 109px 94px;
+}
+
+.container-about {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1222px;
+}
+
+.about-text {
+    width: 605px;
+    padding-top: 68px;
+}
+
+.about-h2 {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    padding-bottom: 40px;
+}
+
+.about-us {
+    color: #E06733;
+}
+
+.about-p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
+}
+
+.about-img {
+    width: 464px;
+    height: 479px;
 }
