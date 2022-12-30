@@ -456,3 +456,55 @@ header {
     background: #AEA1A1;
 }
 /*end contacts*/
+
+/*start footer*/
+footer {
+    background-color: #FFFFFF;
+    height: 130px;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px auto;
+    padding-top: 40px;
+    max-width: 1222px;
+}
+
+.footer-github {
+    display: flex;
+    justify-content: space-between;
+    width: 182px;
+}
+
+.footer-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.footer-text-git {
+    padding-right: 13px;
+}
+
+.footer-text-link:hover {
+    color: #E06733;
+    transition: 0.5s;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 0;
+    width: 188px;
+}
+
+.footer-img {
+    width: 32px;
+    height: 32px;
+}
+/*end footer*/
