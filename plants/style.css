@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth
+}
+
 ul, li, span, a, h3, h1, h2, button {
     padding: 0;
     margin: 0;
