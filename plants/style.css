@@ -19,7 +19,6 @@ ul, li, span, a, h3, h1, h2, button {
 /*header start*/
 header {
     background-color: #EDF2EC;
-    height: 134px;
     font-family: 'Inika';
     font-style: normal;
     font-weight: 400;
@@ -69,7 +68,6 @@ header {
 /*welcome start*/
 .welcome {
     background-color: #EDF2EC;
-    height: 532px;
     padding: 62px 109px;
 }
 
@@ -138,7 +136,6 @@ header {
 /*about start*/
 .about {
     background-color: #FFFFFF;
-    height: 666px;
     padding: 93px 109px 94px;
 }
 
@@ -186,12 +183,12 @@ header {
 /*start service*/
 .service {
     background-color: #EDF2EC;
-    height: 1300px;
 }
 
 .container-service {
     margin: 0 auto;
     max-width: 1222px;
+    padding-bottom: 66px;
 }
 
 .container-service-header {
@@ -247,7 +244,6 @@ header {
     flex-wrap: wrap;
     max-width: 1222px;
     margin-top: 79px;
-    height: 955px;
     align-items: center;
 }
 
@@ -257,6 +253,7 @@ header {
     border: 1px solid #e3e1d5;
     border-radius: 20px;
     background: #EDF2EC;
+    margin-bottom: 55px;
 }
 
 .service-img {
@@ -290,7 +287,6 @@ header {
 /*start prices*/
 .prices {
     background-color: #FFFFFF;
-    height: 560px;
 }
 
 .container-prices {
@@ -400,7 +396,6 @@ header {
 /*start contacts*/
 .contacts {
     background-color: #EDF2EC;
-    height: 550px;
 }
 
 .container-contacts {
@@ -464,7 +459,6 @@ header {
 /*start footer*/
 footer {
     background-color: #FFFFFF;
-    height: 130px;
 }
 
 .container-footer {
@@ -472,7 +466,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     margin: 0px auto;
-    padding-top: 40px;
+    padding: 40px 0 40px;
     max-width: 1222px;
 }
 
