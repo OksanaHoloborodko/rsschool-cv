@@ -49,6 +49,10 @@ header {
     padding-bottom: 2px;
 }
 
+.burger-menu {
+    display: none;
+}
+
 .nav-menu {
     display: flex;
     flex-direction: row;
@@ -547,10 +551,6 @@ footer {
     padding-bottom: 30px;
 }
 
-.welcome-plants {
-    color: #499A18;
-}
-
 .welcome-p {
     font-size: 16px;
     line-height: 25px;
@@ -702,4 +702,33 @@ footer {
 .footer-social {
     padding: 0;
 }
+}
+
+/*Mobile*/
+@media screen and (max-width: 380px) {
+.container-menu {
+    padding: 35px 0;    
+    max-width: 330px;
+}
+
+.header-logo{
+    height: 27px;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.burger-menu {
+    width: 40px;
+    height: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger-line {
+    border: 1px solid #717171;
+}
+
 }
