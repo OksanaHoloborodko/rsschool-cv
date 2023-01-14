@@ -512,7 +512,7 @@ footer {
 /*end footer*/
 
 /*Tablet*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
 
 .container-menu {
     padding: 35px 0;
@@ -705,7 +705,7 @@ footer {
 }
 
 /*Mobile*/
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 660px) {
 .container-menu {
     padding: 35px 0;    
     max-width: 330px;
@@ -731,4 +731,280 @@ footer {
     border: 1px solid #717171;
 }
 
+.welcome {
+    padding: 0px;
+}
+
+.container-welcome {
+    max-width: 330px;
+}
+
+.welcome-img {
+    display: none;
+}
+
+.welcome-text {
+    max-width: 330px;
+    padding: 25px 0 24px;
+}
+
+.welcome-h1 {
+    font-size: 25px;
+    line-height: 35px;
+    padding-bottom: 20px;
+}
+
+.welcome-p {
+    padding-bottom: 24px;
+}
+
+.welcome-btn {
+    width: 100px;
+    height: 34px;
+    font-size: 10px;
+}
+
+.about {
+    padding: 30px 25px;
+}
+
+.container-about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 330px;
+}
+
+.about-text {
+    width: 330px;
+    padding-top: 0px;
+}
+
+.about-h2 {
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.about-p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.about-img {
+    margin-top: 2px;
+    width: 150px;
+    height: 147px;
+}
+
+.container-service {
+    max-width: 330px;
+    padding-bottom: 0px;
+}
+
+.container-service-header {
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.service-h2 {
+    font-size: 25px;
+    line-height: 33px;
+}
+
+.container-service-header-btn {
+    padding-top: 0px;
+    margin-top: 37px;
+}
+
+.container-service-cards {
+    max-width: 668px;
+    margin-top: 40px;
+}
+
+.service-card {
+    width: 281px;
+    margin-bottom: 38px;
+}
+
+.service-img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.service-text-p {
+    padding: 3px 38px;
+}
+
+.container-service-header-btn {
+    flex-wrap: wrap;
+    max-width: 252px;
+    padding-top: 0px;
+    gap: 10px;
+}
+
+.service-btn {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.container-service-cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-width: 330px;
+    padding-top: 40px;
+    margin-top: 30px;
+}
+
+.service-card {
+    width: 280px;
+    margin-bottom: 34px;
+}
+
+.service-card:last-child {
+    margin-bottom: 27px;
+}
+
+.service-img {
+    width: 279px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.service-text-p {
+    padding: 3px 38px;
+}
+
+.container-prices {
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    max-width: 330px;
+}
+
+.container-prices-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 330px;
+}
+
+.prices-h2 {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 36px;
+    max-width: 230px;
+}
+
+.prices-chose {
+    width: 224px;
+    height: 235px;
+    padding: 29px 22px;
+}
+
+.prices-item {
+    align-items: center;
+    width: 180px;
+    padding: 16px 40px 16px 30px;
+}
+
+.prices-item-text {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.container-prices-right {
+    align-items: center;
+    max-width: 330px;
+    margin-top: 0;
+}
+
+.right {
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 0px;
+}
+
+.prices-img {
+    display: none;
+}
+
+.container-contacts {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 330px;
+}
+
+.contacts-img {
+    order: 3;
+    width: 100px;
+    height: 124px;
+    margin-top: 132px;
+    margin-left: 5px;
+}
+
+.contacts-h2 {
+    order: 1;
+    margin-top: 28px;
+    padding-left: 0;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.contacts-city {
+    order: 2;
+    width: 300px;
+    margin-top: 80px;
+    padding: 0 20px;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 0 16px;
+    max-width: 330px;
+}
+
+.footer-github {
+    display: flex;
+    justify-content: space-between;
+    width: 182px;
+}
+
+.footer-text {
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.footer-text-git {
+    padding-right: 11px;
+}
+
+.footer-social {
+    padding: 0;
+}
 }
