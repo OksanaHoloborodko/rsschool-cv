@@ -19,7 +19,6 @@ ul, li, span, a, h3, h1, h2, button {
 /*header start*/
 header {
     background-color: #EDF2EC;
-    height: 134px;
     font-family: 'Inika';
     font-style: normal;
     font-weight: 400;
@@ -50,6 +49,10 @@ header {
     padding-bottom: 2px;
 }
 
+.burger-menu {
+    display: none;
+}
+
 .nav-menu {
     display: flex;
     flex-direction: row;
@@ -64,12 +67,15 @@ header {
     font-weight: 700;
     transition: 0.5s;
    }
+
+.nav-menu-mod {
+    display: none;
+}
 /*header end*/
 
 /*welcome start*/
 .welcome {
     background-color: #EDF2EC;
-    height: 532px;
     padding: 62px 109px;
 }
 
@@ -138,7 +144,6 @@ header {
 /*about start*/
 .about {
     background-color: #FFFFFF;
-    height: 666px;
     padding: 93px 109px 94px;
 }
 
@@ -186,12 +191,12 @@ header {
 /*start service*/
 .service {
     background-color: #EDF2EC;
-    height: 1300px;
 }
 
 .container-service {
     margin: 0 auto;
     max-width: 1222px;
+    padding-bottom: 66px;
 }
 
 .container-service-header {
@@ -247,7 +252,6 @@ header {
     flex-wrap: wrap;
     max-width: 1222px;
     margin-top: 79px;
-    height: 955px;
     align-items: center;
 }
 
@@ -257,6 +261,7 @@ header {
     border: 1px solid #e3e1d5;
     border-radius: 20px;
     background: #EDF2EC;
+    margin-bottom: 55px;
 }
 
 .service-img {
@@ -290,7 +295,6 @@ header {
 /*start prices*/
 .prices {
     background-color: #FFFFFF;
-    height: 560px;
 }
 
 .container-prices {
@@ -400,7 +404,6 @@ header {
 /*start contacts*/
 .contacts {
     background-color: #EDF2EC;
-    height: 550px;
 }
 
 .container-contacts {
@@ -464,7 +467,6 @@ header {
 /*start footer*/
 footer {
     background-color: #FFFFFF;
-    height: 130px;
 }
 
 .container-footer {
@@ -472,7 +474,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     margin: 0px auto;
-    padding-top: 40px;
+    padding: 40px 0 40px;
     max-width: 1222px;
 }
 
@@ -512,3 +514,571 @@ footer {
     height: 32px;
 }
 /*end footer*/
+
+/*Tablet*/
+@media screen and (max-width: 1250px) {
+
+.container-menu {
+    padding: 35px 0;
+    max-width: 668px;
+}
+
+.header-logo{
+    height: 47px;
+}
+
+.nav-menu {
+    height: 47px;
+}
+
+.nav-menu-mod {
+    display: none;
+}
+
+.welcome {
+    padding: 40px 50px 70px;
+}
+
+.container-welcome {
+    flex-direction: row-reverse;
+    max-width: 668px;
+}
+
+.welcome-img {
+    width: 280px;
+    height: 254px;
+}
+
+.welcome-text {
+    width: 346px;
+    padding-top: 0px;
+}
+
+.welcome-h1 {
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+.welcome-p {
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 33px;
+}
+
+.about {
+    padding: 40px 50px 95px;
+}
+
+.container-about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 668px;
+}
+
+.about-text {
+    width: 668px;
+    padding-top: 0px;
+}
+
+.about-h2 {
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.about-img {
+    margin-top: 70px;
+    width: 250px;
+    height: 258px;
+}
+
+.container-service {
+    max-width: 668px;
+    padding-bottom: 30px;
+}
+
+.container-service-header {
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.service-h2 {
+    font-size: 35px;
+    line-height: 46px;
+}
+
+.container-service-header-btn {
+    padding-top: 0px;
+    margin-top: 42px;
+}
+
+.container-service-cards {
+    max-width: 668px;
+    margin-top: 40px;
+}
+
+.service-card {
+    width: 281px;
+    margin-bottom: 38px;
+}
+
+.service-img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.service-text-p {
+    padding: 3px 38px;
+}
+
+
+.container-prices {
+    padding-bottom: 88px;
+    padding-top: 42px;
+    max-width: 668px;
+}
+
+.prices-h2 {
+    font-size: 35px;
+    line-height: 42px;
+    padding-left: 12px;
+    margin-bottom: 55px;
+}
+
+.right {
+    font-size: 25px;
+    line-height: 35px;
+    padding-left: 0;
+    margin: 100px 0 27px;
+}
+
+.container-contacts {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 668px;
+}
+
+.contacts-img {
+    order: 3;
+    width: 200px;
+    height: 249px;
+    margin-top: 250px;
+    margin-left: 20px;
+}
+
+.contacts-h2 {
+    order: 1;
+    margin-top: 38px;
+    padding-left: 0;
+    text-align: center;
+}
+
+.contacts-city {
+    order: 2;
+    margin-top: 100px;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 33px 0 18px;
+    max-width: 668px;
+}
+
+.footer-github {
+    display: flex;
+    justify-content: space-between;
+    width: 182px;
+}
+
+.footer-text {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-text-git {
+    padding-right: 11px;
+}
+
+.footer-social {
+    padding: 0;
+}
+}
+
+/*Mobile*/
+@media screen and (max-width: 660px) {
+.container-menu {
+    padding: 35px 0;    
+    max-width: 330px;
+}
+
+.header-logo{
+    height: 27px;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.burger-menu {
+    width: 40px;
+    height: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.burger-line {
+    border: 1px solid #717171;
+}
+
+.popup-menu {
+    position: fixed;
+    top: 97px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+}
+
+.popup-menu.open {
+    left: 0;
+}
+
+.nav-menu-mod {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px 0;
+}
+
+.nav-menu-mod > li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #499A18;
+}
+
+.nav-menu-mod > li > a:hover {
+    color:#E06733;
+}
+
+.burger-menu.active .burger-line:nth-child(1) {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.burger-menu.active .burger-line:nth-child(4) {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.burger-menu.active .burger-line:nth-child(2) {
+    transform: translateY(5px) rotate(45deg);
+    transition: 0.5s;
+}
+
+.burger-menu.active .burger-line:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+    transition: 0.5s;
+}
+
+body.noscroll {
+    overflow: hidden;
+}
+
+.welcome {
+    padding: 0px;
+}
+
+.container-welcome {
+    max-width: 330px;
+}
+
+.welcome-img {
+    display: none;
+}
+
+.welcome-text {
+    max-width: 330px;
+    padding: 25px 0 24px;
+}
+
+.welcome-h1 {
+    font-size: 25px;
+    line-height: 35px;
+    padding-bottom: 20px;
+}
+
+.welcome-p {
+    padding-bottom: 24px;
+}
+
+.welcome-btn {
+    width: 100px;
+    height: 34px;
+    font-size: 10px;
+}
+
+.about {
+    padding: 30px 25px;
+}
+
+.container-about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 330px;
+}
+
+.about-text {
+    width: 330px;
+    padding-top: 0px;
+}
+
+.about-h2 {
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.about-p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.about-img {
+    margin-top: 2px;
+    width: 150px;
+    height: 147px;
+}
+
+.container-service {
+    max-width: 330px;
+    padding-bottom: 0px;
+}
+
+.container-service-header {
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.service-h2 {
+    font-size: 25px;
+    line-height: 33px;
+}
+
+.container-service-header-btn {
+    padding-top: 0px;
+    margin-top: 37px;
+}
+
+.container-service-cards {
+    max-width: 668px;
+    margin-top: 40px;
+}
+
+.service-card {
+    width: 281px;
+    margin-bottom: 38px;
+}
+
+.service-img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.service-text-p {
+    padding: 3px 38px;
+}
+
+.container-service-header-btn {
+    flex-wrap: wrap;
+    max-width: 252px;
+    padding-top: 0px;
+    gap: 10px;
+}
+
+.service-btn {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.container-service-cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-width: 330px;
+    padding-top: 40px;
+    margin-top: 30px;
+}
+
+.service-card {
+    width: 280px;
+    margin-bottom: 34px;
+}
+
+.service-card:last-child {
+    margin-bottom: 27px;
+}
+
+.service-img {
+    width: 279px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.service-text-p {
+    padding: 3px 38px;
+}
+
+.container-prices {
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    max-width: 330px;
+}
+
+.container-prices-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 330px;
+}
+
+.prices-h2 {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 36px;
+    max-width: 230px;
+}
+
+.prices-chose {
+    width: 224px;
+    height: 235px;
+    padding: 29px 22px;
+}
+
+.prices-item {
+    align-items: center;
+    width: 180px;
+    padding: 16px 40px 16px 30px;
+}
+
+.prices-item-text {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.container-prices-right {
+    align-items: center;
+    max-width: 330px;
+    margin-top: 0;
+}
+
+.right {
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 0px;
+}
+
+.prices-img {
+    display: none;
+}
+
+.container-contacts {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 330px;
+}
+
+.contacts-img {
+    order: 3;
+    width: 100px;
+    height: 124px;
+    margin-top: 132px;
+    margin-left: 5px;
+}
+
+.contacts-h2 {
+    order: 1;
+    margin-top: 28px;
+    padding-left: 0;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.contacts-city {
+    order: 2;
+    width: 300px;
+    margin-top: 80px;
+    padding: 0 20px;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 0 16px;
+    max-width: 330px;
+}
+
+.footer-github {
+    display: flex;
+    justify-content: space-between;
+    width: 182px;
+}
+
+.footer-text {
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.footer-text-git {
+    padding-right: 11px;
+}
+
+.footer-social {
+    padding: 0;
+}
+}
