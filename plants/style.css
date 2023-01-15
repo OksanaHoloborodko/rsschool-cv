@@ -1082,3 +1082,10 @@ body.noscroll {
     padding: 0;
 }
 }
+
+@media screen and (max-width: 330px) {
+.about-text {
+    width: 320px;
+    padding-top: 0px;
+}
+}
