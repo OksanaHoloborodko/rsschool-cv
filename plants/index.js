@@ -68,3 +68,23 @@ seviceCards.forEach((service) => {
         }
     );
 });
+
+//prices accordion
+const accordionTitles = document.querySelectorAll('.prices-item');
+let arr = [];
+
+accordionTitles.forEach((accordionTitle) => {
+    accordionTitle.addEventListener('click', () => {
+        let layout = accordionTitle.closest('.prices-item-layout');
+        let zero_id = false
+        if(arr.length === 1) {
+            zero_id = arr[0].getAttribute('id')
+            arr[0].classList.toggle('open');
+            arr.pop();
+        }
+        if (zero_id !== layout.getAttribute('id')) {
+            layout.classList.toggle('open');
+            arr.push(layout);
+        }
+    })
+});
