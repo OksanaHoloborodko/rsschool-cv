@@ -239,6 +239,11 @@ header {
     color: #E06733;
 }
 
+.service-btn.clicked {
+    background: #E06733;
+    color: #FFFFFF;
+}
+
 .service-btn:hover {
     background: #E06733;
     color: #FFFFFF;
@@ -262,6 +267,11 @@ header {
     border-radius: 20px;
     background: #EDF2EC;
     margin-bottom: 55px;
+}
+
+.service-card.blur {
+    filter: blur(2px);
+    transition: 0.8s;
 }
 
 .service-img {
@@ -518,6 +528,14 @@ footer {
 /*Tablet*/
 @media screen and (max-width: 1250px) {
 
+    @media (hover: none) and (pointer: coarse) {
+        .service-btn:hover {
+            background: #EDF2EC;
+            color: #E06733;
+            transition: 0s;
+        }
+    }
+
 .container-menu {
     padding: 35px 0;
     max-width: 668px;
@@ -714,7 +732,15 @@ footer {
 
 /*Mobile*/
 @media screen and (max-width: 660px) {
-.container-menu {
+    @media (hover: none) and (pointer: coarse) {
+        .service-btn:hover {
+            background: #EDF2EC;
+            color: #E06733;
+            transition: 0s;
+        }
+    }
+
+    .container-menu {
     padding: 35px 0;    
     max-width: 330px;
 }

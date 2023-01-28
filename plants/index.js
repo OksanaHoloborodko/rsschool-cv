@@ -27,3 +27,44 @@ function closePopup () {
     burger.classList.remove("active");
     body.classList.remove("noscroll");
 }
+
+//service blur
+const seviceCards = document.querySelectorAll('.service-btn');
+const serviceIssues = document.querySelectorAll('.service-card');
+
+seviceCards.forEach((service) => {
+    service.addEventListener('click', () => {
+        service.classList.toggle('clicked');
+        let activeSeviceCards = document.querySelectorAll('.service-btn.clicked');
+        let activeSeviceCardsId = [];
+        for (let activeSeviceCard of activeSeviceCards) {
+            activeSeviceCardsId.push(activeSeviceCard.getAttribute('id'));
+        }
+
+        serviceIssues.forEach((serviceIssue) => {
+            if(serviceIssue.getAttribute('class').includes('blur')) {
+                serviceIssue.classList.toggle('blur');
+            }
+            if(!activeSeviceCardsId.includes(serviceIssue.getAttribute('class').split(' ')[1])) {
+                serviceIssue.classList.toggle('blur');
+            }
+            if(activeSeviceCardsId.length == 0) {
+                serviceIssue.classList.toggle('blur');
+            }
+        });
+
+        if(activeSeviceCards.length === 2) {
+            seviceCards.forEach((e) => {
+                if(!e.classList.contains('clicked')) {
+                    e.setAttribute('disabled', true);
+                }
+            });
+        } else {
+            const noActiveService = document.querySelector('.service-btn:disabled');
+            if (noActiveService) {
+                noActiveService.removeAttribute('disabled');
+            }
+        }
+        }
+    );
+});
