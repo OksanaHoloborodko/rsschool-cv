@@ -88,3 +88,39 @@ accordionTitles.forEach((accordionTitle) => {
         }
     })
 });
+
+//contacts dropdown
+const selectHeader = document.querySelectorAll('.contacts-city');
+const selectCity = document.querySelectorAll('.select-city');
+const cityInfo = [
+    ['Yonkers, NY', '+1 914 678 0003', '511 Warburton Ave'], 
+    ['Canandaigua, NY', '+1 585 393 0001', '151 Charlotte Street'], 
+    ['Sherrill, NY', '+1 315 908 0004', '14 WEST Noyes BLVD'],
+    ['New York City', '+1 212 456 0002', '9 East 91st Street']
+    ];
+
+selectHeader.forEach((item) => {
+    item.addEventListener('click', () => {
+        item.parentElement.classList.toggle('visible');
+    });
+});
+
+selectCity.forEach((item) => {
+    item.addEventListener('click', () => {
+        let text = item.innerText;
+        let currentText = item.closest('.contacts-select').querySelector('.contacts-city-text');
+        currentText.innerText = text;
+        item.closest('.contacts-select').classList.add('choose-city');
+        item.closest('.contacts-select').querySelector('.contacts-city').classList.add('choose-city');
+        item.closest('.contacts-select').classList.remove('visible');
+        document.querySelector('.container-contacts').classList.add('choose-city');
+
+        for (let city of cityInfo) {
+            if (currentText.innerText === city[0]) {
+                document.querySelector('.adress .value').innerText = city[0];
+                document.querySelector('.phone .value').innerText = city[1];
+                document.querySelector('.office .value').innerText = city[2];
+            }
+        }
+    });
+});
