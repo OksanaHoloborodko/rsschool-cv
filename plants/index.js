@@ -98,6 +98,7 @@ const cityInfo = [
     ['Sherrill, NY', '+1 315 908 0004', '14 WEST Noyes BLVD'],
     ['New York City', '+1 212 456 0002', '9 East 91st Street']
     ];
+let callUsBtn = document.querySelector('.call-btn');
 
 selectHeader.forEach((item) => {
     item.addEventListener('click', () => {
@@ -120,6 +121,11 @@ selectCity.forEach((item) => {
                 document.querySelector('.adress .value').innerText = city[0];
                 document.querySelector('.phone .value').innerText = city[1];
                 document.querySelector('.office .value').innerText = city[2];
+                callUsBtn.setAttribute("phone", city[1].split(' ').join(''))
+                callUsBtn.onclick = () => {
+                    window.location = 'tel:'+ city[1].split(' ').join('');
+                    console.log(city[1].split(' ').join(''));
+                }
             }
         }
     });
