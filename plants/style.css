@@ -132,6 +132,7 @@ header {
     font-size: 16px;
     line-height: 20px;
     color: #000000;
+    cursor: pointer;
 }
 
 .welcome-btn:hover {
@@ -237,6 +238,12 @@ header {
     font-size: 20px;
     line-height: 26px;
     color: #E06733;
+    cursor: pointer;
+}
+
+.service-btn.clicked {
+    background: #E06733;
+    color: #FFFFFF;
 }
 
 .service-btn:hover {
@@ -262,6 +269,11 @@ header {
     border-radius: 20px;
     background: #EDF2EC;
     margin-bottom: 55px;
+}
+
+.service-card.blur {
+    filter: blur(2px);
+    transition: 0.8s;
 }
 
 .service-img {
@@ -324,22 +336,49 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 332px;
-    height: 282px;
+    max-width: 332px;
     border: 1px solid #e3e1d5;
     border-radius: 20px;
     padding: 34px 41px;
     background: #FFFFFF;
 }
 
-.prices-item {
-    display: flex;
-    justify-content: space-between;
+.prices-item-layout {
     width: 250px;
-    height: 50px;
     background: #EDF2EC;
     border-radius: 20px;
     padding: 16px 40px;
+    margin-bottom: 32px;
+}
+
+.prices-item-layout.open {
+    background: #D6E7D2;
+}
+
+.prices-item-layout.open >.prices-item-hidden {
+    display: block;
+}
+
+.prices-item-layout.open >.prices-item >.prices-item-arrow {
+    background: #AEA1A1;
+    transition: 0.3s;
+}
+
+.prices-item-layout.open >.prices-item >.prices-item-arrow >svg {
+    stroke: #FFFFFF;
+    transform: rotate(-180deg);
+    transition: 0.3s;
+}
+
+.prices-item-layout:last-child {
+    margin-bottom: 0;
+}
+
+.prices-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 
 .prices-item-text {
@@ -359,6 +398,64 @@ header {
     height: 16px;
     border-radius: 50%;
     background: #D9D9D9;
+}
+
+svg {
+    stroke: #717171;
+}
+
+.prices-item-line {
+    content: '';
+    margin-top: 12px;
+    margin-bottom: 6px;
+    border: none;
+    background: #AEA1A1;
+    height: 0.5px;
+}
+
+.prices-item-description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #717171;
+    margin-bottom: 6px;
+}
+
+.prices-item-price{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.prices-item-price-mod {
+    font-weight: 700;
+    font-size: 16px;
+    color: #E06733;
+}
+
+.prices-btn {
+    width: 86px;
+    height: 25px;
+    background: #FFFFFF;
+    border: 0px;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+    cursor: pointer;
+}
+
+.prices-item-hidden {
+    display: none;
 }
 
 .container-prices-right {
@@ -387,6 +484,7 @@ header {
     text-align: center;
     margin-bottom: 38px;
     color: #E06733;
+    cursor: pointer;
 }
 
 .contact-btn:hover {
@@ -430,6 +528,84 @@ header {
     padding-left: 3.5%;
 }
 
+.contacts-select {
+    padding-top: 148px; 
+}
+
+.contacts-select.choose-city > .city-adress {
+    display: block;
+}
+
+.contacts-select.choose-city.visible > .city-adress {
+    display: none;
+}
+
+.city-adress {
+    display: none;
+    position: absolute;
+    width: 448px;
+    z-index: 1;
+    margin-top: 47px;
+    padding: 17px 35px 27px;
+    background: #EDF2EC;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+.office {
+    display: flex;
+}
+
+.city-info-mod {
+    margin-bottom: 24px;
+}
+
+.city-info >.key {
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    width: 127px;
+}
+
+.city-info >.value {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+}
+
+.call-btn {
+    display: block;
+    width: 122px;
+    height: 26px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    background: #EDF2EC;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    margin: 0 auto;
+    color:#717171;
+    cursor: pointer;
+}
+
+.call-btn:hover {
+    background: #E06733;
+    color: #FFFFFF;
+    transition: 0.8s;
+}
+
 .contacts-city {
     display: flex;
     justify-content: space-between;
@@ -440,7 +616,17 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px;
     padding: 0 35px 0 20px;
-    margin-top: 148px;
+    cursor: pointer;
+}
+
+.contacts-city.choose-city {
+    background: #C1E698;
+    box-shadow: 0px 0px 0px;
+}
+
+.contacts-city:hover {
+    background: #C1E698;;
+    box-shadow: 0px 0px 0px;
 }
 
 .contacts-city-text {
@@ -461,6 +647,50 @@ header {
     height: 16px;
     border-radius: 50%;
     background: #AEA1A1;
+}
+
+.contacts-city-body {
+    padding: 30px 35px;
+    background: #DCE9D9;
+}
+
+.select-city {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #499A18;
+    border-bottom: 1px solid #D9D9D9;
+    cursor: pointer;
+}
+
+.select-city:hover {
+    color: #717171;
+    border-bottom: 1px solid #717171;
+}
+
+.contacts-city-body {
+    display: none;
+}
+
+.contacts-select.visible >.contacts-city {
+    background: #C1E698;;
+    box-shadow: 0px 0px 0px;
+}
+
+.contacts-select.visible >.contacts-city >.contacts-arrow {
+    background: #8BA07E;
+}
+
+.contacts-select.visible >.contacts-city >.contacts-arrow >img {
+    transform: rotate(-180deg);
+    transition: 0.3s;
+}
+
+.contacts-select.visible >.contacts-city-body {
+    display: block;
 }
 /*end contacts*/
 
@@ -517,6 +747,14 @@ footer {
 
 /*Tablet*/
 @media screen and (max-width: 1250px) {
+
+    @media (hover: none) and (pointer: coarse) {
+        .service-btn:hover {
+            background: #EDF2EC;
+            color: #E06733;
+            transition: 0s;
+        }
+    }
 
 .container-menu {
     padding: 35px 0;
@@ -667,7 +905,7 @@ footer {
     order: 3;
     width: 200px;
     height: 249px;
-    margin-top: 250px;
+    margin-top: 270px;
     margin-left: 20px;
 }
 
@@ -678,9 +916,10 @@ footer {
     text-align: center;
 }
 
-.contacts-city {
+.contacts-select {
     order: 2;
-    margin-top: 100px;
+    margin-top: 0px;
+    padding-top: 100px;
 }
 
 .container-footer {
@@ -714,7 +953,15 @@ footer {
 
 /*Mobile*/
 @media screen and (max-width: 660px) {
-.container-menu {
+    @media (hover: none) and (pointer: coarse) {
+        .service-btn:hover {
+            background: #EDF2EC;
+            color: #E06733;
+            transition: 0s;
+        }
+    }
+
+    .container-menu {
     padding: 35px 0;    
     max-width: 330px;
 }
@@ -982,14 +1229,18 @@ body.noscroll {
 
 .prices-chose {
     width: 224px;
-    height: 235px;
     padding: 29px 22px;
+}
+
+.prices-item-layout {
+    width: 180px;
+    background: #EDF2EC;
+    padding: 16px 40px 16px 30px;
+    margin-bottom: 10px;
 }
 
 .prices-item {
     align-items: center;
-    width: 180px;
-    padding: 16px 40px 16px 30px;
 }
 
 .prices-item-text {
@@ -1017,6 +1268,7 @@ body.noscroll {
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 0px;
+    cursor: pointer;
 }
 
 .prices-img {
@@ -1028,6 +1280,11 @@ body.noscroll {
     align-items: center;
     justify-content: center;
     max-width: 330px;
+}
+
+.container-contacts.choose-city >.contacts-img {
+    visibility: hidden;
+    margin-top: 160px;
 }
 
 .contacts-img {
@@ -1047,11 +1304,43 @@ body.noscroll {
     text-align: center;
 }
 
-.contacts-city {
+.contacts-select {
     order: 2;
+    margin-top: 0px;
+    padding-top: 80px;
+}
+
+.contacts-city {
     width: 300px;
-    margin-top: 80px;
     padding: 0 20px;
+}
+
+.city-adress {
+    width: 300px;
+    z-index: 1;
+    margin-top: 47px;
+    padding: 23px 36px;
+}
+
+.city-info-mod {
+    margin-bottom: 24px;
+}
+
+.city-info >.key {
+    width: 64px;
+    line-height: 20px;
+}
+
+.city-info >.value {
+    line-height: 20px;
+}
+
+.adress {
+    margin-bottom: 20px;
+}
+
+.phone {
+    margin-bottom: 20px;
 }
 
 .container-footer {
