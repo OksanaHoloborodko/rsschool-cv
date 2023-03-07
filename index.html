@@ -45,13 +45,13 @@
                     <pre class="code">
                         <code>
         function combine(...args) {
-            let newObj = {};
+            let newObj={};
             for(let item of args) {
                 for(let key in item) {
                     if(Object.keys(newObj).includes(key)) {
-                        newObj[key] += item[key];
+                        newObj[key]+=item[key];
                     } else {
-                        newObj[key] = item[key];
+                        newObj[key]=item[key];
                     }
                 }
             }
@@ -100,7 +100,7 @@
         <div class="footer">
             <a target="_blank" href="https://rs.school/js/"><img src="./assets/img/rsschool-logo.png" alt="rsschool logo" width="100" height="41"></a>
             <p>© 2022</p>
-            <a class ="git" target="_blank" href="https://github.com/OksanaHoloborodko"><img src="./assets/img/github-logo.png" alt="github logo" width="60" height="15"></a>
+            <a class="git" target="_blank" href="https://github.com/OksanaHoloborodko"><img src="./assets/img/github-logo.png" alt="github logo" width="60" height="15"></a>
         </div>
     </footer>
 </body>
