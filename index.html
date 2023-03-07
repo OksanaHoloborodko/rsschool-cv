@@ -45,13 +45,13 @@
                     <pre class="code">
                         <code>
         function combine(...args) {
-            let newObj = {};
+            let newObj={};
             for(let item of args) {
                 for(let key in item) {
                     if(Object.keys(newObj).includes(key)) {
-                        newObj[key] += item[key];
+                        newObj[key]+=item[key];
                     } else {
-                        newObj[key] = item[key];
+                        newObj[key]=item[key];
                     }
                 }
             }
